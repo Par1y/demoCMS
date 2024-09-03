@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 //不是很懂，但是大概知道重写了默认的返回处理器
-@ControllerAdvice(basePackages = "com.demo505.demoCMS.Controller")
+@ControllerAdvice(basePackages = "com.demo505.demoCMS.Controller.UserController")
 public class GlobalResponseBodyHandler implements ResponseBodyAdvice {
     
     @Override

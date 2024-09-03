@@ -4,8 +4,9 @@ import com.demo505.demoCMS.DO.UserDO;
 import com.demo505.demoCMS.mapper.UserMapper;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-
+@Service
 public class DatabaseController {
     @Autowired
     private UserMapper userMapper;
