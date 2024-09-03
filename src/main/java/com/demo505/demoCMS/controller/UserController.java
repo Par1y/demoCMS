@@ -48,4 +48,21 @@ public class UserController {
         userVO.setName(userDO.getName());
         return CommonResult.success(userVO);
     }
+
+    //注册接口
+    @PostMapping("/register")
+    public CommonResult<UserVO> register(@RequestParam("username") String username, @RequestParam("password") String password) {
+        final int result = DatabaseController.insert(username, password);
+        if(result != 1) {
+            logger.error("用户注册出错：{}", username);
+            return CommonResult.error(-2, "注册失败");
+        }else{
+            logger.info("已注册用户：{}", username);
+            UserDO userDO = DatabaseController.findByName(username);
+            UserVO userVO = new UserVO();
+            userVO.setName(userDO.getName());
+            userVO.setId(userDO.getId());
+            return CommonResult.success(userVO);
+        }
+    }
 }
