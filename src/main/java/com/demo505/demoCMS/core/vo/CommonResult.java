@@ -5,6 +5,7 @@ import org.springframework.util.Assert;
 
 import java.io.Serializable;
 
+//全局统一返回类
 public class CommonResult<T> implements Serializable {
     public static Integer CODE_SUCCESS = 0;
     
@@ -45,7 +46,7 @@ public class CommonResult<T> implements Serializable {
         return !isSuccess();
     }
 
-    //标准getter和setter
+    //以下都是getter和setter
     public Integer getCode() {
         return this.code;
     }
