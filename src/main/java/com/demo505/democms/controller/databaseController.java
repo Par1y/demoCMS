@@ -1,14 +1,14 @@
-package com.demo505.demoCMS.controller;
-
-import com.demo505.demoCMS.DTO.UserDTO;
-import com.demo505.demoCMS.mapper.UserMapper;
+package com.demo505.democms.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.demo505.democms.dto.UserDTO;
+import com.demo505.democms.mapper.UserMapper;
+
 //数据库控制器，服务类
 @Service
-public class DatabaseController {
+public class databaseController {
     //注入userMapper进行数据库交互
     @Autowired
     private UserMapper userMapper;

@@ -1,4 +1,4 @@
-package com.demo505.demoCMS.DTO;
+package com.demo505.democms.dto;
 
 //数据传输对象，仅在后端操作，不会返回给前端
 //基本只存储、传递数据，不做其他操作

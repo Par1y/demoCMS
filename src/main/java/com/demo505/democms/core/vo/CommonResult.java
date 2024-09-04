@@ -1,13 +1,13 @@
-package com.demo505.demoCMS.core.vo;
+package com.demo505.democms.core.vo;
+
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.util.Assert;
-
 import java.io.Serializable;
 
 //全局统一返回类
 public class CommonResult<T> implements Serializable {
-    public static Integer CODE_SUCCESS = 0;
+    private static final Integer CODE_SUCCESS = Integer.valueOf(0);
     
     //返回构成： 错误码/0 错误提示 数据
     private Integer code;

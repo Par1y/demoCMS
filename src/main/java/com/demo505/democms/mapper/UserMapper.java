@@ -1,8 +1,8 @@
-package com.demo505.demoCMS.mapper;
+package com.demo505.democms.mapper;
 
 import org.apache.ibatis.annotations.*;
 
-import com.demo505.demoCMS.DTO.UserDTO;
+import com.demo505.democms.dto.UserDTO;
 
 //数据库交互接口，用mybatis注解简化操作
 @Mapper

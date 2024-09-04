@@ -1,8 +1,8 @@
-package com.demo505.demoCMS.vo;
+package com.demo505.democms.vo;
 
 //值对象，从DTO复制数据过来返回给前端
 //定义决定不存在敏感数据，增强隔离安全性
-public class UserVO {
+public class UserVO{
     private long id;
     private String name;
 

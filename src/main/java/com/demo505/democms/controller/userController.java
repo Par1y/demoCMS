@@ -1,13 +1,13 @@
-package com.demo505.demoCMS.controller;
-
-import com.demo505.demoCMS.DTO.UserDTO;
-import com.demo505.demoCMS.core.vo.CommonResult;
-import com.demo505.demoCMS.vo.UserVO;
+package com.demo505.democms.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
+
+import com.demo505.democms.core.vo.CommonResult;
+import com.demo505.democms.dto.UserDTO;
+import com.demo505.democms.vo.UserVO;
 
 
 //用户控制器，此类负责用户接口的处理和返回
@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.*;
 //主接口"/user"
 @RequestMapping("/user")
 
-public class UserController {
+public class userController {
     //引入日志对象
-    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+    private static final Logger logger = LoggerFactory.getLogger(userController.class);
     //Spring注入数据库控制服务Bean
     @Autowired
-    private DatabaseController DatabaseController;
+    private databaseController DatabaseController;
     
     //使用id查询用户接口
     @GetMapping("/")

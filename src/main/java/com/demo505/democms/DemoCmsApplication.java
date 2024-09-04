@@ -1,4 +1,4 @@
-package com.demo505.demoCMS;
+package com.demo505.democms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
