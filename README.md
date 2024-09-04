@@ -3,7 +3,7 @@
 边学SpringMVC边写着玩的。
 
 ## 部署
-1.配置数据库，修改aoolication.properties
+1.配置数据库，修改application.properties
 
     CREATE DATABASE demoCMS CHARSET utf8mb4 COLLATE utf8mb4_general_ci;
 
