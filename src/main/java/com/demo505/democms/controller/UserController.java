@@ -16,17 +16,17 @@ import com.demo505.democms.vo.UserVO;
 //主接口"/user"
 @RequestMapping("/user")
 
-public class userController {
+public class UserController {
     //引入日志对象
-    private static final Logger logger = LoggerFactory.getLogger(userController.class);
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
     //Spring注入数据库控制服务Bean
     @Autowired
-    private databaseController DatabaseController;
+    private DatabaseController databaseController;
     
     //使用id查询用户接口
     @GetMapping("/")
     public CommonResult<UserVO> getUser(@RequestParam("id") Long id) {
-        UserDTO userDO = DatabaseController.findById(id);
+        UserDTO userDO = databaseController.findById(id);
         if (userDO == null) {
             logger.error("User with id {} not found", id);
             // 查无此人
@@ -42,7 +42,7 @@ public class userController {
     // 登录接口
     @PostMapping("/login")
     public CommonResult<UserVO> login(@RequestParam("username") String username, @RequestParam("password") String password) {
-        UserDTO userDO = DatabaseController.findByName(username);
+        UserDTO userDO = databaseController.findByName(username);
         if (userDO == null) {
             logger.error("User with username {} not found", username);
             //查无此人
@@ -63,7 +63,7 @@ public class userController {
     //注册接口
     @PostMapping("/register")
     public CommonResult<UserVO> register(@RequestParam("username") String username, @RequestParam("password") String password) {
-        final int result = DatabaseController.insert(username, password);
+        final int result = databaseController.insert(username, password);
         if(result != 1) {
             logger.error("用户注册出错：{}", username);
             //没改动那就是没注册上
@@ -71,7 +71,7 @@ public class userController {
         }else{
             logger.info("已注册用户：{}", username);
             //注册上了返回一下用户VO,其实空对象返回也可以，只要code：0就是成功结果
-            UserDTO userDO = DatabaseController.findByName(username);
+            UserDTO userDO = databaseController.findByName(username);
             //复制DTO数据至VO并返回给前端
             UserVO userVO = new UserVO();
             userVO.setName(userDO.getName());

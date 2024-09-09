@@ -8,7 +8,7 @@ import com.demo505.democms.mapper.UserMapper;
 
 //数据库控制器，服务类
 @Service
-public class databaseController {
+public class DatabaseController {
     //注入userMapper进行数据库交互
     @Autowired
     private UserMapper userMapper;
