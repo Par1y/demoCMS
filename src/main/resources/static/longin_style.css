@@ -1,0 +1,215 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #bfdac6;
+}
+
+.content {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* 边框设置 */
+    border: 1px solid white;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.left,
+.right {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #e6feed;
+}
+
+.right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fafffb;
+}
+
+.left img {
+    width: 50%;
+}
+
+.left span {
+    font-family: "SUSE", sans-serif;
+}
+
+.left span:first-of-type {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+.left span:nth-of-type(2) {
+    text-align: center;
+    font-size: 1.4vh;
+}
+
+.hat-icon {
+    width: 5%;
+    position: relative;
+    left: -9vh;
+    top: 1.6vh;
+}
+
+.fonts {
+    font-size: 4vh;
+    font-family: "Times New Roman";
+    margin-bottom: 5vh;
+}
+
+.fonts span:nth-child(2) {
+    color: #62a074;
+}
+
+.right form {
+    font-size: 2vh;
+    color: gray;
+    margin-bottom: 3vh;
+}
+
+.right input {
+    width: 30vh;
+    border-radius: 7px;
+    border: 3px solid #e0ece3;
+    padding: 1vh;
+    margin: 1vh;
+    font-size: 1.7vh;
+    color: rgb(0, 0, 0, 0.9);
+}
+
+.find-pwd {
+    color: #62a074;
+    border-bottom: 1px solid #62a074;
+    font-size: 1.8vh;
+    display: block;
+    margin-left: auto;
+    width: max-content; /* 使宽度仅限于内容 */
+}
+
+#login {
+    padding: 1.3vh;
+    background-color: rgb(0, 0, 0, 0.85);
+    color: white;
+    font-size: 1.9vh;
+    width: 32vh;
+    border-radius: 8px;
+    transition: background-color 0.3m ease;
+}
+
+#login:hover {
+    background-color: rgb(0, 0, 0)
+}
+
+.icons {
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.icons .log-icons div {
+    padding: 0.5vh;
+    width: 5vh;
+    height: 5vh;
+    margin-right: 2vh;
+    margin-bottom: 3.5vh;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    transition: background-image, background-color 0.1s ease;
+}
+
+.icons .log-icons div:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.log-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#QQ-icon {
+    background-image: url('./img/QQ_black.png');
+    background-size: cover;
+}
+
+#QQ-icon:hover {
+    background-image: url('./img/QQ _white.png');
+}
+
+#Wechat-icon {
+    background-image: url('./img/微信_black.png');
+    background-size: cover;
+}
+
+#Wechat-icon:hover {
+    background-image: url('./img/微信_white.png');
+}
+
+#phone-icon {
+    background-image: url('./img/手机_black.png');
+    background-size: cover;
+}
+
+#phone-icon:hover {
+    background-image: url('./img/手机_white.png');
+}
+
+.icons span:nth-of-type(2) {
+    color:#62a074;
+    text-decoration: underline;
+}
+
+.line-or {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+    color: rgb(128, 128, 128, 0.6);
+}
+
+.line {
+    flex: 1;
+    border-top: 1px solid gray;
+    position: relative;
+}
+
+.line-or .line::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 8vh;
+    height: 1px;
+    background-color: rgb(128, 128, 128, 0.5);
+}
+
+.line-or .line:first-child::before {
+    right: 100%;
+}
+
+.line-or .text {
+    padding: 0vh 3vh;
+}
+
+#login:hover,
+#register:hover,
+.find-pwd:hover {
+    cursor: pointer;
+}

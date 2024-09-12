@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="longin_style.css">
+    <script type="module" src="login_script.js" defer ></script>
+    <!-- axios传递数据 -->
+    <script src="./js/axios.min.js"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+
+        <div class="left">
+            <img src="./img/sicnu_icon.png" alt="川师图片"><br>
+            <span>Sichuan Normal University</span>
+            <span>SICNU is the oldest normal university (teacher's college)<br>
+                 located in Chengdu, Sichuan.</span>
+        </div>
+
+        <div class="right">
+                <img class="hat-icon" src="./img/学士帽.png" alt="学士帽">
+                <div class="fonts">
+                    <span>MASTERY</span>
+                    <span>HUB</span>
+                </div>
+
+                <form id="loginForm">
+                    <label>
+                        Username or email
+                        <br>
+                        <input id="username" type="email" name="username" value="username">
+                    </label>
+                    <br>
+                    <label>
+                        Password
+                        <br>
+                        <input id="password" type="password" name="password" value="password">
+                    </label>
+                    <br>
+                    <span class="find-pwd">Forget password?</span>
+                    <br>
+                    <input id="login" type="submit" value="Sign in">
+                </form>
+
+                <div class="line-or">
+                    <span class="line"></span>
+                    <span class="text">or</span>
+                    <span class="line"></span>
+                </div>
+
+
+                <!-- 图标 -->
+                <div class="icons">
+                    <div class="log-icons">
+                        <div id="QQ-icon"></div>
+                        <div id="Wechat-icon"></div>
+                        <div id="phone-icon"></div>
+                    </div>
+                    <div>
+                        <span>Are you new?</span>
+                        <span id="register">Create an Account</span>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</body>
+</html>

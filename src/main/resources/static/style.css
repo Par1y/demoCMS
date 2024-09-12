@@ -1,0 +1,172 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+#background {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; /* 确保背景图不变形 */
+}
+
+#top {
+    width: 100%;
+    height: auto; /* 根据内容高度自动调整 */
+    color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    background-color: rgba(63, 138, 116, 0.7); /* 使用 rgba 设置透明度 */
+    position: relative;
+    z-index: 2;
+}
+
+#logo-sicnu img {
+    max-width: 100%; 
+    height: auto;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+.icon img,
+#right-log img {
+    max-width: 100%;
+    height: auto; 
+    width: 80px;
+    margin-right: 2em;
+    transform: scale(0.8);
+}
+
+#mid {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-right: 25em;
+}
+
+#right-log {
+    display: flex;
+    align-items: center;
+}
+
+#right-log img {
+    width: 60px; 
+    height: 60px; 
+    margin-right: 0; 
+}
+
+.button {
+    font-size: 2em !important;  
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 0 !important;
+    margin-right: 2vh;
+}
+
+input[type="search"] {
+    width: 60%;
+    max-width: 450px; /* 最大宽度 */
+    height: 50px;
+    border-radius: 25px;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+    text-indent: 2em;
+    border: none;
+    outline: none;
+    background-image: url(./img/搜索.png);
+    background-repeat: no-repeat;
+    background-position: 3.2em center;
+    background-size: 2.1em;
+}
+
+.button {
+    font-size: 1.5em;
+    margin-left: 1em;
+    font-family: KaiTi, serif;
+    color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(40, 40, 152, 0.7) !important;
+    transform: scale(1.15);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 30vh;
+    color: white;
+}
+
+.content span:first-of-type {
+    font-size: 3em;
+    font-family: SimHei, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.8em;
+    line-height: 1.2;
+    display: inline-block;
+    margin-bottom: 1vh;
+}
+
+.content span:nth-of-type(2) {
+    font-size: 1.3em;
+    letter-spacing: 1.4em;
+}
+
+.login {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.login input {
+    padding: 0.5em 3em;
+    max-width: 80%;
+    height: auto;
+    border-radius: 7px;
+    font-size: 1.7em;
+    color: white;
+    background-color: rgba(29, 141, 215, 0.3);
+    border: white solid 4px;
+    transition: background-color 0.3s ease;
+}
+
+.login input:hover {
+    background-color: rgba(29, 141, 215, 0.5);
+    cursor: pointer;
+}
+
+
+#bottom {
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+#bottom span {
+    color: white;
+    font-size: 2vh;
+    margin-bottom: 3vh;
+}
+
+#bottom img {
+    width: 5vh;
+}

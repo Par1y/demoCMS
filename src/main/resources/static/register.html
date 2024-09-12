@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="register_style.css">
+    <script src="register_script.js" defer ></script>
+    <script src="./JS/axios.min.js"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <div class="obscure">
+            <span>Sign Up</span>
+            <br>
+            <span>Sign up unlock exciting <br> experience with our services</span>
+        </div>
+
+        <div class="left">
+        </div>
+
+        <div class="right">
+                <div class="fonts">
+                    <span>Register</span>
+                </div>
+
+                <form id="register-submit">
+                    <label>
+                        Username or email
+                        <br>
+                        <input id="username" type="text" name="username" value="username">
+                    </label>
+                    <br>
+                    <label>
+                        Password
+                        <br>
+                        <input id="password" type="password" name="password" value="password">
+                    </label>
+                    <br>
+                    <label>
+                        Confirm Password
+                        <br>
+                        <input id="confirm-password" type="password" value="password">
+                    </label>
+                    <br>
+                    <div class="privacy">
+                        <span>By countinuing you agree to</span>
+                        <span class="privacy-detail">Terms & Conditions</span>
+                        <br>
+                        <span>and</span>
+                        <span class="privacy-detail">Privacy Policy</span>
+                    </div>
+                    <br>
+                    <input id="register" type="submit" value="Register">
+                </form>
+
+                <div class="line-or">
+                    <span class="line"></span>
+                    <span class="text">or</span>
+                    <span class="line"></span>
+                </div>
+
+
+                <!-- 图标 -->
+                <div class="icons">
+                    <div class="log-icons">
+                        <div id="QQ-icon"></div>
+                        <div id="Wechat-icon"></div>
+                        <div id="phone-icon"></div>
+                    </div>
+                    <div>
+                        <span>Already have an account?</span>
+                        <span id="login">Login now</span>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</body>
+</html>

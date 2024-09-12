@@ -9,6 +9,8 @@ import com.demo505.democms.core.vo.CommonResult;
 import com.demo505.democms.dto.UserDTO;
 import com.demo505.democms.vo.UserVO;
 
+import jakarta.servlet.http.HttpServletRequest;
+
 
 //用户控制器，此类负责用户接口的处理和返回
 @RestController
